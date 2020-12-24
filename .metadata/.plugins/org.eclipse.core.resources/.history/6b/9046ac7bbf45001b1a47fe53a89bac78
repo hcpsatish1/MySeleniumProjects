@@ -1,4 +1,3 @@
-// this update is only for Git 
 package StepDefinition;		
 
 import org.openqa.selenium.By;
