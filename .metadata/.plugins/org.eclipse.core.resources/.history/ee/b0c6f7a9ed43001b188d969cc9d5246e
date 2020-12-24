@@ -1,0 +1,49 @@
+package allureReporting;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Tests {
+
+	WebDriver driver;
+
+@BeforeClass
+public void setup()
+{
+	WebDriverManager.chromedriver().setup();
+	driver = new ChromeDriver();
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	driver.get("https://demo.noncommerce.com/");
+	driver.manage().window().maximize();
+	
+	
+}
+@Test (priority=1)
+public void logopresence() {
+	boolean disstatus= driver.findElement(By.xpath("//div[@class='header-logo']//a//img")).isDisplayed();
+	Assert.assertEquals(disstatus,true);
+}
+
+@Test (priority=2)
+public void logintest() {
+	
+
+}
+
+@Test (priority=3)
+public void registration() {
+}
+
+@Afterclass
+public void 
+
+
+}

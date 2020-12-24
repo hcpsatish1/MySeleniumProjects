@@ -1,0 +1,31 @@
+package allureReporting;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.google.common.base.Strings;
+
+import org.openqa.selenium.WebDriver;
+
+public class PG1 {
+
+	public static void main(String[] arg) {
+		
+		System.setProperty("webdriver.chrome.driver","F:\\sw\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+        String baseUrl = "http://demo.guru99.com/test/newtours/";
+        String expectedTitle = "Welcome: Mercury Tours";
+        String actualTitle = "";
+        
+        driver.get(baseUrl);
+        actualTitle= driver.getTitle();
+        
+        if (actualTitle.contentEquals(expectedTitle)) {
+        	System.out.println("TestPassed");
+            } else {
+             System.out.println("TestFailed");
+             
+            }
+        driver.close();
+	}
+	
+}
