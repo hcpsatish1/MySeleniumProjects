@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runner" project="CucumberWithSelenium" tests="3" started="3" failures="0" errors="0" ignored="2">
+  <testsuite name="TestRunner.Runner" time="0.0">
+    <testsuite name="Feature: Reset functionality on login page of Application" time="0.0">
+      <testsuite name="Scenario Outline: Verification of reset button with numbers of credential" time="0.0">
+        <testsuite name="Examples:" time="0.0">
+          <testsuite name="| User1 | password1 |" time="0.0" incomplete="true">
+            <skipped/>
+            <testcase name="Given Open the Firefox and launch the application" classname="| User1 | password1 |" time="0.0"/>
+            <testcase name="When Enter the Username User1and Password password1" classname="| User1 | password1 |" time="0.0" ignored="true"/>
+            <testcase name="Then Reset the credential" classname="| User1 | password1 |" time="0.0" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

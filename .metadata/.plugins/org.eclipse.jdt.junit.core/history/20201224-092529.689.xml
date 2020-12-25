@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runner" project="CucumberWithSelenium" tests="9" started="0" failures="0" errors="0" ignored="0">
+  <testsuite name="TestRunner.Runner" incomplete="true">
+    <testsuite name="Feature: Reset functionality on login page of Application" incomplete="true">
+      <testsuite name="Scenario Outline: Verification of reset button with numbers of credential" incomplete="true">
+        <testsuite name="Examples:" incomplete="true">
+          <testsuite name="| User1 | password1 |" incomplete="true">
+            <testcase name="Given Open the Firefox and launch the application" classname="| User1 | password1 |" incomplete="true"/>
+            <testcase name="When Enter the Username User1and Password password1" classname="| User1 | password1 |" incomplete="true"/>
+            <testcase name="Then Reset the credential" classname="| User1 | password1 |" incomplete="true"/>
+          </testsuite>
+          <testsuite name="| User2 | password2 |" incomplete="true">
+            <testcase name="Given Open the Firefox and launch the application" classname="| User2 | password2 |" incomplete="true"/>
+            <testcase name="When Enter the Username User2and Password password2" classname="| User2 | password2 |" incomplete="true"/>
+            <testcase name="Then Reset the credential" classname="| User2 | password2 |" incomplete="true"/>
+          </testsuite>
+          <testsuite name="| User3 | password3 |" incomplete="true">
+            <testcase name="Given Open the Firefox and launch the application" classname="| User3 | password3 |" incomplete="true"/>
+            <testcase name="When Enter the Username User3and Password password3" classname="| User3 | password3 |" incomplete="true"/>
+            <testcase name="Then Reset the credential" classname="| User3 | password3 |" incomplete="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>
